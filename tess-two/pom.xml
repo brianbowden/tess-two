@@ -21,7 +21,15 @@
  
     <build> 
         <sourceDirectory>src</sourceDirectory>
-         
+
+        <!-- <resources>
+            <resource>
+                <targetPath>jni</targetPath>
+                <filtering>false</filtering>
+                <directory>${basedir}/jni</directory>
+            </resource>
+        </resources> -->
+
         <plugins>
             <plugin>
                 <groupId>com.jayway.maven.plugins.android.generation2</groupId>
@@ -33,6 +41,8 @@
                         <platform>19</platform>
                     </sdk>
                     <undeployBeforeDeploy>true</undeployBeforeDeploy>
+                    <attachNativeArtifacts>true</attachNativeArtifacts>
+                    <clearNativeArtifacts>false</clearNativeArtifacts>
                     <attachSources>true</attachSources>
                 </configuration>
             </plugin>
