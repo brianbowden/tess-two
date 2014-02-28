@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 ndk-build
 android update project --path .
 ant release

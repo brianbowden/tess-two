@@ -3,7 +3,7 @@
   <groupId>tess-two</groupId>
   <artifactId>tess-two</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>apklib</packaging>
+  <packaging>aar</packaging>
   <dependencies>
         <dependency>
             <groupId>com.google.android</groupId>
